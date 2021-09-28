@@ -324,7 +324,8 @@
     }
         //footer
 
-        footer{
+        .footerDesktop{
+            width: 100vw;
             display: flex;
             justify-content: space-around;
             align-items: center;
@@ -335,25 +336,31 @@
             bottom: 0;
 
             .nav{
-                width:6%;
-                margin: 10px;
-                padding: 10px;
-                padding-right: 20px;
-                border-radius: 10px;
 
-                img {
-                    width: 50%;
-                }
+                width: 15%;
+                margin: 20px;
+                display: flex;
+                justify-content: center;
 
                 a{
+                    margin: 10px;
                     text-decoration: none;
                 }
+
+                img{
+                    width: 20%
+                }
+                
             }
 
             .activo{
                 background-color: white;
-                
+                border-radius: 10px;
             }
+
+
+
+            
         }
 
        .footerMobile{
