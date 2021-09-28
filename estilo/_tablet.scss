@@ -1,0 +1,71 @@
+@import "variables";
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    *{
+        margin: 0px;
+        padding: 0px;
+        font-family:  'Lato', sans-serif;
+    }
+
+    main{
+        background-color:$colorPrincipal;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+
+            .titulo{
+                height: 10%;
+                padding-top: 30px;
+                
+
+            }
+        
+            .iniciar{
+                height: 80%;
+                justify-self: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+
+                        .btn {                      
+                            margin: 10px;
+                            background-color: $principalOscuro;
+                            width: 80%;
+                            height: 30px;
+                            border-radius: 20px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+
+                            a{
+                                text-decoration: none;
+                                color:black;
+                            }
+    
+                                
+
+                        }
+                        
+
+                    input{
+                        border-top: none;
+                        border-left: none;
+                        border-bottom: solid 2px $principalOscuro;
+                        border-right: none;
+                        background-color: $colorPrincipal;
+                        margin: 10px;
+                       
+                    }
+
+                   }
+
+
+   } 
+    
+}

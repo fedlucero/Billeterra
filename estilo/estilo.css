@@ -1,0 +1,784 @@
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  /* *{
+        margin: 0px;
+        padding: 0px;
+        font-family:  'Lato', sans-serif;
+    }
+
+    main{
+        background-color:white;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+
+            .titulo{
+                height: 10%;
+                padding-top: 30px;
+                
+
+            }
+        
+            .iniciar{
+                height: 80%;
+                justify-self: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+
+                        .btn {                      
+                            margin: 10px;
+                            background-color: $principalOscuro;
+                            width: 80%;
+                            height: 30px;
+                            border-radius: 20px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+
+                            a{
+                                text-decoration: none;
+                                color:black;
+                            }
+    
+                                
+
+                        }
+                        
+
+                    input{
+                        border-top: none;
+                        border-left: none;
+                        border-bottom: solid 2px $principalOscuro;
+                        border-right: none;
+                        background-color: $colorPrincipal;
+                        margin: 10px;
+                       
+                    }
+
+                   }
+
+
+   }  */
+  * {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Lato', sans-serif;
+  }
+  .inicio {
+    background-color: #0798EC !important;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: white;
+  }
+  .inicio .titulo {
+    height: 10%;
+    padding-top: 30px;
+  }
+  .inicio .iniciar {
+    height: 80%;
+    justify-self: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .inicio .iniciar .btn {
+    margin: 10px;
+    background-color: #078bd8;
+    width: 80%;
+    height: 30px;
+    border-radius: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .inicio .iniciar .btn a {
+    text-decoration: none;
+    color: white;
+  }
+  .inicio .iniciar input {
+    border-top: none;
+    border-left: none;
+    border-bottom: solid 2px #078bd8;
+    border-right: none;
+    background-color: #0798EC;
+    margin: 10px;
+  }
+  /* Pagina Billeterra*/
+  header {
+    height: 20vh;
+    background-color: #0798EC;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+  }
+  header .saludo {
+    font-size: 20px;
+    color: white;
+  }
+  header .saldo {
+    color: white;
+  }
+  header .inputSaldo input {
+    background-color: #0798EC;
+    border: none;
+    border-bottom: solid 2px #078bd8;
+    color: white;
+  }
+  main {
+    background-color: white !important;
+  }
+  main .botones {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 20px;
+    width: 50vw;
+  }
+  main .btn {
+    margin: 10px;
+    background-color: #0798EC;
+    width: 80%;
+    height: 30px;
+    border-radius: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main .btn p {
+    font-size: 15px;
+  }
+  main .btn a {
+    text-decoration: none;
+    color: white;
+  }
+  main .cardsMonedas {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main .cardsMonedas .moneda {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 85vw;
+    height: 50px;
+    border: solid 1px #0798ec73;
+    border-radius: 10px;
+    margin: 10px auto;
+  }
+  main .cardsMonedas .moneda .logo {
+    margin-left: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main .cardsMonedas .moneda .logo img {
+    height: 30px;
+  }
+  main .cardsMonedas .moneda .logo p {
+    margin-left: 10px;
+  }
+  main .cardsMonedas .moneda .totales {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    margin-right: 10px;
+  }
+  main .cardsMonedas .moneda .totales p {
+    display: inline-block;
+  }
+  main .cardsMonedas .moneda .totales .totalDinero .dinero {
+    color: #706c6c;
+    font-size: 10px;
+  }
+  .titulos {
+    padding-top: 20px;
+    color: white;
+    font-weight: 400;
+  }
+  .btns {
+    margin: 10px;
+    background-color: #078bd8;
+    width: 40%;
+    height: 30px;
+    border-radius: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: white;
+  }
+  .btns a {
+    text-decoration: none;
+    color: white;
+  }
+  .ingresoCompra {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .ingresoCompra input {
+    margin: 15px;
+    border: none;
+    border-bottom: solid 2px #078bd8;
+    font-size: 15px;
+  }
+  .historial {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .historial .logoXl {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 10px;
+  }
+  .historial .logoXl p {
+    font-size: 40px;
+  }
+  .historial .historialCompra {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 85vw;
+    margin: 10px;
+  }
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #0798EC;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    position: fixed;
+    bottom: 0;
+  }
+  footer .nav {
+    width: 5%;
+    margin: 10px;
+    padding: 10px;
+  }
+  footer .nav img {
+    width: 100%;
+  }
+  footer .activo {
+    background-color: white;
+    border-radius: 50%;
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  * {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Lato', sans-serif;
+  }
+  .inicio {
+    background-color: #0798EC;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: white;
+  }
+  .inicio .titulo {
+    height: 10%;
+    padding-top: 30px;
+  }
+  .inicio .iniciar {
+    height: 80%;
+    justify-self: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .inicio .iniciar .btn {
+    margin: 10px;
+    background-color: #078bd8;
+    width: 80%;
+    height: 30px;
+    border-radius: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .inicio .iniciar .btn a {
+    text-decoration: none;
+    color: white;
+  }
+  .inicio .iniciar input {
+    border-top: none;
+    border-left: none;
+    border-bottom: solid 2px #078bd8;
+    border-right: none;
+    background-color: #0798EC;
+    margin: 10px;
+  }
+  /* Pagina Billeterra*/
+  header {
+    height: 20vh;
+    background-color: #0798EC;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+  }
+  header .saludo {
+    font-size: 20px;
+    color: white;
+  }
+  header .saldo {
+    color: white;
+  }
+  header .inputSaldo input {
+    background-color: #0798EC;
+    border: none;
+    border-bottom: solid 2px #078bd8;
+    color: white;
+  }
+  main .botones {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 20px;
+  }
+  main .btn {
+    margin: 10px;
+    background-color: #0798EC;
+    width: 80%;
+    height: 30px;
+    border-radius: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main .btn p {
+    font-size: 15px;
+  }
+  main .btn a {
+    text-decoration: none;
+    color: white;
+  }
+  main .cardsMonedas {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main .cardsMonedas .moneda {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 85vw;
+    height: 50px;
+    border: solid 1px #0798ec73;
+    border-radius: 10px;
+    margin: 10px auto;
+  }
+  main .cardsMonedas .moneda .logo {
+    margin-left: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main .cardsMonedas .moneda .logo img {
+    height: 30px;
+  }
+  main .cardsMonedas .moneda .logo p {
+    margin-left: 10px;
+  }
+  main .cardsMonedas .moneda .totales {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    margin-right: 10px;
+  }
+  main .cardsMonedas .moneda .totales p {
+    display: inline-block;
+  }
+  main .cardsMonedas .moneda .totales .totalDinero .dinero {
+    color: #706c6c;
+    font-size: 10px;
+  }
+  .titulos {
+    padding-top: 20px;
+    color: white;
+    font-weight: 400;
+  }
+  .btns {
+    margin: 10px;
+    background-color: #078bd8;
+    width: 40%;
+    height: 30px;
+    border-radius: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: white;
+  }
+  .btns a {
+    text-decoration: none;
+    color: white;
+  }
+  .ingresoCompra {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .ingresoCompra input {
+    margin: 15px;
+    border: none;
+    border-bottom: solid 2px #078bd8;
+    font-size: 15px;
+  }
+  .historial {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .historial .logoXl {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 10px;
+  }
+  .historial .logoXl p {
+    font-size: 40px;
+  }
+  .historial .historialCompra {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 85vw;
+    margin: 10px;
+  }
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #0798EC;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    position: fixed;
+    bottom: 0;
+  }
+  footer .nav {
+    width: 5%;
+    margin: 10px;
+    padding: 10px;
+  }
+  footer .nav img {
+    width: 100%;
+  }
+  footer .activo {
+    background-color: white;
+    border-radius: 50%;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  * {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Lato', sans-serif;
+  }
+  main {
+    background-color: #0798EC;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main .titulo {
+    height: 10%;
+    padding-top: 30px;
+  }
+  main .iniciar {
+    height: 80%;
+    justify-self: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main .iniciar .btn {
+    margin: 10px;
+    background-color: #078bd8;
+    width: 80%;
+    height: 30px;
+    border-radius: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main .iniciar .btn a {
+    text-decoration: none;
+    color: black;
+  }
+  main .iniciar input {
+    border-top: none;
+    border-left: none;
+    border-bottom: solid 2px #078bd8;
+    border-right: none;
+    background-color: #0798EC;
+    margin: 10px;
+  }
+}
+/*# sourceMappingURL=estilo.css.map */

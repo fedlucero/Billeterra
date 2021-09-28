@@ -1,0 +1,13 @@
+@import "variables";
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+   
+
+    header{
+        background-color: $colorPrincipal;
+        border-bottom-left-radius:20px ;
+        border-bottom-right-radius: 20px;
+    }
+}
