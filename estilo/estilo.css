@@ -390,7 +390,7 @@
   footer .activo {
     background-color: white;
   }
-  .footer_mobile {
+  .footerMobile {
     display: none;
   }
   .logoSeccion {
@@ -735,7 +735,7 @@
     background-color: white;
     border-radius: 50%;
   }
-  .footer_desktop {
+  .footerDesktop {
     display: none;
   }
 }
