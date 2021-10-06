@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billeterra</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../estilo/estilo.css">
+</head>
+
+<body>
+    <header>
+        <div class="saludo">
+            Hola Nombre
+        </div>
+        <div class="saldo">
+            Tu saldo es de:
+        </div>
+        <div class="inputSaldo">
+            <input type="numbre" placeholder="total de tus activos">
+        </div>
+    </header>
+    <main>
+        <article class="botones">
+            <div class="btn">
+                <a href="./nuevaMoneda.html">Nueva moneda</a>
+            </div>
+            <div class="btn">
+                <a href="./nuevaCompra.html">Nueva compra</a>
+            </div>
+        </article>
+        <article class="cardsMonedas" id="cardsMonedas">
+                      
+            
+        </article>
+    </main>
+    <footer class="footerMobile">
+        <div class="nav activo"><img src="../imagenes/homeico.svg" alt=""></div>
+        <div class="nav"><a href="./nuevaMoneda.html"><img src="../imagenes/masicoblanco.svg" alt=""></a></div>
+        <div class="nav"><a href="./nuevaCompra.html"><img src="../imagenes/coinicoblanco.svg" alt=""></a></div>
+        <div class="nav"><a href="./historial.html"></a><img src="../imagenes/historialicoblanco.svg" alt=""></a></div>
+        <div class="nav"><a href="../index.html"><img src="../imagenes/saliricoblanco.svg" alt=""></a></div>
+    </footer>
+    <footer class="footerDesktop">
+        <div class="nav activo">
+            <a href="./billeterra.html">
+                <div class="logoSeccion">
+                    <img src="../imagenes/homeico.svg" alt="">
+                    <p class="textoActivo">Inicio</p>
+                </div>
+            </a>
+        </div>
+        <div class="nav">
+            <a href="./nuevaMoneda.html">
+                <div class="logoSeccion">
+                    <img src="../imagenes/masicoblanco.svg" alt="">
+                    <p>Nueva Moneda</p>
+                </div>
+            </a>
+        </div>
+        <div class="nav">
+            <a href="./nuevaCompra.html">
+                <div class="logoSeccion">
+                    <img src="../imagenes/coinicoblanco.svg" alt="">
+                    <p>Nueva Compra</p>
+                </div>
+            </a>
+        </div>
+        <div class="nav">
+            <a href="./historial.html">
+                <div class="logoSeccion">
+                    <img src="../imagenes/historialicoblanco.svg" alt="">
+                    <p>Historial</p>
+                </div>
+            </a>
+        </div>
+        <div class="nav">
+            <a href="../index.html">
+                <div class="logoSeccion">
+                    <img src="../imagenes/saliricoblanco.svg" alt="">
+                    <p>Salir</p>
+                </div>
+            </a>
+        </div>
+    </footer>
+    <script src="../js/billetarradom.js"></script>
+
+</body>
+
+</html>
