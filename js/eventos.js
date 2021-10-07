@@ -88,7 +88,6 @@ function crearMoneda(nuevaMoneda1){
                                             <p class="simboloMoneda">${moneda.simbolo}</p>
                                         </div>
                                         <div class="totalDinero">
-
                                             <p class="dinero">${multi(moneda.cantidad,moneda.cotizacion)}</p>
                                             <p class="simboloDinero">USD</p>
                                         </div>
@@ -104,4 +103,3 @@ function crearMoneda(nuevaMoneda1){
 
 const botonMoneda = document.getElementById("btnMoneda");
 botonMoneda.addEventListener("click", crearMoneda);
-
