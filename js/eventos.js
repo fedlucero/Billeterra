@@ -63,8 +63,8 @@ function crearMoneda(nuevaMoneda1){
     
     let pedirNombre =prompt ("Ingrese nombre de la moneda");
     let pedirSimbolo =prompt ("Ingrese simbolo de la moneda");
-    let pedirCantidad =prompt ("Ingrese cantidad comprada");
-    let pedirCotizacion =prompt ("Ingrese cotizacion a la hora de la compra");
+    let pedirCantidad =parseInt(prompt ("Ingrese cantidad comprada"));
+    let pedirCotizacion =parseInt(prompt ("Ingrese cotizacion a la hora de la compra"));
     
     const nuevaMonedaBtn = new NuevaMoneda(pedirNombre,pedirSimbolo,pedirCantidad,pedirCotizacion);
 
