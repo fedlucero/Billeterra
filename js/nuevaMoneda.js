@@ -37,35 +37,150 @@
 
 // console.log(`Usted ingreso ${monedasIngresadas.length} monedas`);
 
-const crearMoneda = () =>{
+// const monedasIngresadas = JSON.parse(localStorage.getItem("newMoneda"));
 
-    class NuevaMoneda {
-        constructor (nombre, simbolo){
-            this.nombre=nombre;
-            this.simbolo=simbolo;
-        }
+// monedasIngresadas===null;
+
+// if 
+
+/////////////////////////////////////////////////////////////////
+
+// class NuevaMoneda {
+//     constructor (nombre, simbolo){
+//         this.nombre=nombre;
+//         this.simbolo=simbolo;
+//     }
+// }
+
+// const crearMoneda = () =>{
+
+   
+//         let inputNombre = document.getElementById("nombreMoneda").value; 
+//         let inputSimbolo = document.getElementById("simboloMoneda").value; 
+
+//         const newMoneda = new NuevaMoneda(inputNombre,inputSimbolo);
+
+//         localStorage.setItem("newMoneda", JSON.stringify(newMoneda));
+    
+//         const monedasIngresadas=[];
+//         monedasIngresadas.push(new NuevaMoneda(inputNombre,inputSimbolo));
+
+    
+//     const articleMonedas = document.getElementById("cardsMonedas");
+//     let contenedor =document.createElement("div");
+    
+//     contenedor.innerHTML = 
+//                         `<div class="moneda">
+//                         <div class="logo">
+//                             <img src="../imagenes/${inputSimbolo}.png" alt="${inputNombre}">
+//                             <p>${inputNombre}</p>
+//                         </div>
+//                     </div>`
+//                     articleMonedas.appendChild(contenedor);
+//                     }
+
+//  const botonMoneda = document.getElementById("btnCrear");
+//  botonMoneda.addEventListener("click", crearMoneda);
+
+
+///////////////////////////////////////////
+
+
+
+
+
+class NuevaMoneda {
+
+    constructor(nombre, simbolo) {
+  
+      this.nombre = nombre;
+  
+      this.simbolo = simbolo;
+  
     }
-        let inputNombre = document.getElementById("nombreMoneda").value; 
-        let inputSimbolo = document.getElementById("simboloMoneda").value; 
-
-        const newMoneda = new NuevaMoneda(inputNombre,inputSimbolo)
+  
+  }
+  
+  
+  const crearItemMoneda = (newMoneda) => {
+  
     
-        const monedasIngresadas=[];
-        monedasIngresadas.push(new NuevaMoneda(inputNombre,inputSimbolo));
-
+  
+    let divMoneda = document.createElement("div");
+  
+    divMoneda.setAttribute("class", "moneda");
+  
+    let divLogo = document.createElement("div");
+  
+    divLogo.setAttribute("class", "logo");
+  
+    let p = document.createElement("p");
+  
+    p.textContent = newMoneda.nombre;
+  
+    let img = document.createElement("img");
+  
+    img.setAttribute("src", `../imagenes/${newMoneda.simbolo}.png`);
+  
+    img.setAttribute("alt", newMoneda.nombre);
+  
+    divLogo.appendChild(img);
+  
+    divLogo.appendChild(p);
+  
+    divMoneda.appendChild(divLogo);
+  
+    return divMoneda;
+  
+  };
+  
+  
+  
+  const crearMoneda = () => {
+  
+    let inputNombre = document.getElementById("nombreMoneda").value;
+  
+    let inputSimbolo = document.getElementById("simboloMoneda").value;
+  
+  
+  
+    const newMoneda = new NuevaMoneda(inputNombre, inputSimbolo);
+  
     
-    const articleMonedas = document.getElementById("cardsMonedas");
-    let contenedor =document.createElement("div");
-    
-    contenedor.innerHTML = 
-                        `<div class="moneda">
-                        <div class="logo">
-                            <img src="../imagenes/${inputSimbolo}.png" alt="${inputNombre}">
-                            <p>${inputNombre}</p>
-                        </div>
-                    </div>`
-                    articleMonedas.appendChild(contenedor);
-                    }
+  
+  
+    const monedasIngresadas = [];
+  
+    monedasIngresadas.push(newMoneda);
 
- const botonMoneda = document.getElementById("btnCrear");
- botonMoneda.addEventListener("click", crearMoneda);
+  
+    document.getElementById("cardsMonedas").appendChild(crearItemMoneda(newMoneda));
+  
+  };
+  
+  
+  
+  const botonMoneda = document.getElementById("btnCrear");
+  
+  botonMoneda.addEventListener("click", crearMoneda);
+
+
+
+
+
+
+  localStorage.setItem("moneda", JSON.stringify(newMoneda));
+  const monedasCreadas= JSON.parse(localStorage.getItem("moneda"));
+
+
+  if(monedasCreadas !== null){
+      for (const moneda of monedasCreadas){
+          crearMoneda(moneda);
+      }
+  }
+  
+
+
+  
+
+

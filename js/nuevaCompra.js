@@ -45,17 +45,19 @@
 
 const multi = (a,b) => a * b;
 
+class NuevaCompra {
+    constructor(nombre,simbolo, cantidad,cotizacionCompra,fechaCompra){
+        this.nombre = nombre;
+        this.simbolo = simbolo;
+        this.cantidad = cantidad;
+        this.cotizacionCompra = cotizacionCompra;
+        this.fechaCompra = fechaCompra;
+}
+}
+
 const crearCompra = () =>{
 
-    class NuevaCompra {
-            constructor(nombre,simbolo, cantidad,cotizacionCompra,fechaCompra){
-                this.nombre = nombre;
-                this.simbolo = simbolo;
-                this.cantidad = cantidad;
-                this.cotizacionCompra = cotizacionCompra;
-                this.fechaCompra = fechaCompra;
-        }
-    }
+    
         let inputNombre = document.getElementById("monedaNombre").value; 
         let inputSimbolo = document.getElementById("monedaSimbolo").value; 
         let inputCantidad = document.getElementById("monedaCantidad").value;
