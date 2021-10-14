@@ -1,5 +1,5 @@
 
-
+const monedasIngresadas=[];
 const multi = (a,b) => a * b;
 
 class NuevaCompra {
@@ -111,7 +111,7 @@ const crearCompra = () =>{
 
         const newCompra = new NuevaCompra(inputNombre,inputSimbolo,inputCantidad,inpuntCotizacion,inputFecha)
     
-        const monedasIngresadas=[];
+        
 
         monedasIngresadas.push(new NuevaCompra(inputNombre,inputSimbolo,inputCantidad,inpuntCotizacion,inputFecha));
 

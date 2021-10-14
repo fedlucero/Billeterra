@@ -1,3 +1,4 @@
+const monedasIngresadas = [];
 
 class NuevaMoneda {
 
@@ -55,8 +56,6 @@ class NuevaMoneda {
   
     const newMoneda = new NuevaMoneda(inputNombre, inputSimbolo);
   
-    
-    const monedasIngresadas = [];
   
     monedasIngresadas.push(newMoneda);
 
