@@ -88,7 +88,6 @@
 
 
 
-
 class NuevaMoneda {
 
     constructor(nombre, simbolo) {
@@ -133,8 +132,7 @@ class NuevaMoneda {
     return divMoneda;
   
   };
-  
-  
+
   
   const crearMoneda = () => {
   
@@ -147,7 +145,7 @@ class NuevaMoneda {
     const newMoneda = new NuevaMoneda(inputNombre, inputSimbolo);
   
     
-  
+    
   
     const monedasIngresadas = [];
   
@@ -155,6 +153,10 @@ class NuevaMoneda {
 
   
     document.getElementById("cardsMonedas").appendChild(crearItemMoneda(newMoneda));
+
+    localStorage.setItem("moneda", JSON.stringify(monedasIngresadas));
+
+   
   
   };
   
@@ -166,18 +168,21 @@ class NuevaMoneda {
 
 
 
-
-
-
-  localStorage.setItem("moneda", JSON.stringify(newMoneda));
+    
   const monedasCreadas= JSON.parse(localStorage.getItem("moneda"));
 
-
   if(monedasCreadas !== null){
-      for (const moneda of monedasCreadas){
-          crearMoneda(moneda);
-      }
-  }
+    for (const moneda of monedasCreadas){
+        crearMoneda(moneda);
+    }
+}
+
+
+
+ 
+
+  
+
   
 
 
