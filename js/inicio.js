@@ -1,27 +1,27 @@
 
 
+$("#btnTerminos").on("click", function(){
+    $("#tyc").hide();
+});
 
-const Usuario = () => {
-  
-    let inputUsuario = document.getElementById("usuario").value;
-  
-        console.log(inputUsuario);
-  
-  
-    // const newUsuario = new Nuevosuario(inputUsuario);
-  
-  
-    // const monedasIngresadas = [];
-  
-    // usuarioIngresado.push(newMoneda);
+$("#btnTerminos").on("click", function(){
+    $("#btnTerminos").hide();
+});
 
-    // localStorage.setItem("moneda", JSON.stringify(monedasIngresadas));
+$("#btnTerminos").on("click", function(){
+    $("#btnTerminos2").show();
+});
 
-  
-    // document.getElementById("cardsMonedas").appendChild(crearItemMoneda(newMoneda));
+$("#btnTerminos2").on("click", function(){
+    $("#btnTerminos2").hide();
+});
 
-    
+$("#btnTerminos2").on("click", function(){
+    $("#tyc").show();
+});
 
-   
-  
-  };
+$("#btnTerminos2").on("click", function(){
+    $("#btnTerminos").show();
+
+
+})

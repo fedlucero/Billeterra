@@ -130,6 +130,23 @@
                    
                 }
 
+                .terminos{
+                    font-family: lato;
+                    color: white;
+                    font-size: 16px;
+                    width: 50vw;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    p{
+                        width: 100%;
+                    }
+                }
+                #btnTerminos2{
+                    display: none;
+                }
+
                }
 
 

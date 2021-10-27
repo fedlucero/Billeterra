@@ -133,6 +133,28 @@
     background-color: #0798EC;
     margin: 10px;
   }
+  .inicio .iniciar .terminos {
+    font-family: lato;
+    color: white;
+    font-size: 16px;
+    width: 50vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .inicio .iniciar .terminos p {
+    width: 100%;
+  }
+  .inicio .iniciar #btnTerminos2 {
+    display: none;
+  }
   /* Pagina Billeterra*/
   header {
     height: 20vh;
