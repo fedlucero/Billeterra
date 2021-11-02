@@ -94,4 +94,20 @@ window.addEventListener('load', () => {
                             });
                         });
                     }, 10000);
+
+                
+                /*Funcion Cargar y Mostrar datos*/
+                $(document).ready(function(){    
+
+                        var nombre = localStorage.getItem("Nombre");
+                        /*Mostrar datos almacenados*/      
+                        document.getElementById("saludo").innerHTML = nombre;
+                        const saluda = document.querySelector('.saludo');
+                        saluda.innerHTML = `
+                        <p>Hola ${nombre}</p>`
+                        console.log(nombre);
                     
+                    });   
+                    
+
+                
