@@ -405,3 +405,37 @@
        }
 
 }
+
+
+// Estilo API
+
+
+.apiDiva{
+    border: solid black 2px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 10px;
+    
+}
+
+.apiHijo{
+    padding: 10px;
+
+}
+
+.apiDiv{
+    border: solid black 1px;
+    border-radius: 10px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin: 20px 10px;
+
+    img{
+        height: 30px;
+    }
+}
+
+
