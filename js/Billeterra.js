@@ -62,7 +62,7 @@ window.addEventListener('load', () => {
                     setInterval(() => {
                         fetch(`${url}tickers/?start=0&limit=25`).then(response => response.json()).then(json => {
                             const coins = json.data;
-                            const tdiv = document.querySelector('tbody');
+                            const tdiv = document.querySelector('tdiv');
                             tdiv.innerHTML = '';
                             //Por cada moneda agregamos una nueva fila a la tabla.
                             coins.forEach((coin) => {
