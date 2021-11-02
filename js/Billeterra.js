@@ -71,7 +71,7 @@ window.addEventListener('load', () => {
                                     <div class="apiDiv" id="${coin.id}">
                                     
                                         <div class="apiHijo">
-                                            <img src="../imagenes/(${coin.symbol}.toLowerCase()).png">
+                                            <img src="../imagenes/(${coin.symbol}.png">
                                         </div>
                                         <div class="apiHijo">
                                             ${coin.name}
