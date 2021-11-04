@@ -97,7 +97,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 let monedaHTML = document.createElement('li');
                 monedaHTML.setAttribute('data-moneda-id', cursor.value.key);
                 monedaHTML.classList.add('list-group-item');
-                monedaHTML.innerHTML = `
+                 monedaHTML.innerHTML = `
                     <p class="font-weight-bold">Nombre: 
                         <span class="font-weight-normal">${cursor.value.nombre}</span>
                     </p>
@@ -118,6 +118,14 @@ document.addEventListener('DOMContentLoaded', () => {
                     </p>
                     
                 `;
+            //     `<div class="apiDiva">
+            //     <div class="apiHijo"></div>
+            //     <div class="apiHijo">${cursor.value.nombre}</div>
+            //     <div class="apiHijo">${cursor.value.simbolo}</div>
+            //     <div class="apiHijo">${cursor.value.cantidad}</div>
+            //     <div class="apiHijo">${cursor.value.cotizacion}</div>
+            //     <div class="apiHijo">${cursor.value.fecha}</div>
+            // </div>`;
                 //boton de borrar
                 const btnBorrar = document.createElement('button');
                 btnBorrar.classList.add('borrar', 'btn', 'btn-danger');
