@@ -166,6 +166,7 @@
         align-items:center;
         position: sticky;
         top: 0;
+        z-index: 1000;
 
         .saludo{
             font-size: 20px;
@@ -437,5 +438,10 @@
         height: 30px;
     }
 }
+ .artas { z-index: 2;
+ }
 
+.vacio{
+    height:100px ;
+}
 

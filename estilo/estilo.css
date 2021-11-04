@@ -176,6 +176,7 @@
     position: -webkit-sticky;
     position: sticky;
     top: 0;
+    z-index: 1000;
   }
   header .saludo {
     font-size: 20px;
@@ -479,6 +480,14 @@
 
 .apiDiv img {
   height: 30px;
+}
+
+.artas {
+  z-index: 2;
+}
+
+.vacio {
+  height: 100px;
 }
 
 /* Extra small devices (phones, 600px and down) */

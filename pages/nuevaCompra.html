@@ -4,86 +4,121 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nueva compra</title>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://bootswatch.com/4/lumen/bootstrap.min.css">
     <link rel="stylesheet" href="../estilo/estilo.css">
-   
 </head>
-<body>
     <Header>
         <h1 class="titulos">Nueva compra</h1>
         <div class="btns">
             <a href="./billeterra.html">Volver</a>
         </div>
     </Header>
-    <main>
-        <article class="ingresoCompra">
-            <input type="text" placeholder="Nombre moneda" id="monedaNombre">
-            <input type="text" placeholder="Simbolo moneda" id="monedaSimbolo">
-            <input type="number" placeholder="Cantidad comprada" id="monedaCantidad">
-            <input type="number" placeholder="Cotizacion compra" id="monedaCotizacion">
-            <input type="date" placeholder="Fecha" id="monedaFecha">
-            <div class="btns"  id="btnCrearCompra">Crear</div>
-        </article>
-
-        <article class="cardsMonedas" id="cardsCompras">
-                      
-            
-        </article>
-        
-    </main>
-
-    <footer class="footerMobile">
-        <div class="nav "><a href="./billeterra.html"><img src="../imagenes/homeicoblanco.svg" alt=""></a></div>
-        <div class="nav"><a href="./nuevaMoneda.html"><img src="../imagenes/masicoblanco.svg" alt=""></a></div>
-        <div class="nav activo"><a href=""><img src="../imagenes/coinico.svg" alt=""></a></div>
-        <div class="nav"><a href="./historial.html"><img src="../imagenes/historialicoblanco.svg" alt=""></a></div>
-        <div class="nav"><a href="../index.html"><img src="../imagenes/saliricoblanco.svg" alt=""></a></div>
-    </footer>
-
-    <footer class="footerDesktop">
-        <div class="nav">
-            <a href="./billeterra.html">
-                <div class="logoSeccion">
-                    <img src="../imagenes/homeicoblanco.svg" alt="">
-                    <p>Inicio</p>
+    <body>
+        <div class="container mt-2 p-2 atras">
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-6 ">
+                        <h2 class="text-center my-4">Agrega tu compra</h2>
+                        <form>
+                                <div class="form-group row">
+                                    <label class="col-sm-4 col-lg-4 col-form-label">Nombre Moneda:</label>
+                                    <div class="col-sm-8 col-lg-8">
+                                        <input type="text" id="nmoneda" class="form-control" placeholder="Nombre Moneda" required>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-sm-4 col-lg-4 col-form-label">Simbolo moneda:</label>
+                                    <div class="col-sm-8 col-lg-8">
+                                        <input type="text" id="smoneda"  class="form-control"  placeholder="Simbolo de la moneda" required>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                        <label class="col-sm-4 col-lg-4 col-form-label">Cantidad comprada</label>
+                                        <div class="col-sm-8 col-lg-8">
+                                            <input type="number" id="cantidadCompra" class="form-control"  placeholder="Cantidad comprada" required>
+                                        </div>
+                                    </div>
+    
+                                <div class="form-group row">
+                                    <label class="col-sm-4 col-lg-4 col-form-label">Cotizacion</label>
+                                    <div class="col-sm-8 col-lg-8">
+                                        <input type="number" id="cotizacionCompra" class="form-control" 
+                                        placeholder="Cotizacion al momento de la compra"
+                                        required>
+                                    </div>
+                                </div>
+    
+                                <div class="form-group row">
+                                    <label class="col-sm-4 col-lg-4 col-form-label">Fecha:</label>
+                                    <div class="col-sm-8 col-lg-8">
+                                        <input type="date" id="fecha" class="form-control" required>
+                                    </div>
+                                </div>
+    
+                               
+    
+                                <div class="form-group row justify-content-end">
+                                    <div class="col-sm-3">
+                                        <button type="submit" class="btn btn-success w-100">Agregar</button>
+                                    </div>
+                                </div>
+                            </form>
                 </div>
-            </a>
+    
+                <!-- <div class="col-md-6">
+                        <h2 id="administra" class="text-center my-4"></h2>
+                        <ul id="monedas" class="list-group"></ul>
+                </div> -->
+            </div>
+    
+    
         </div>
-        <div class="nav">
-            <a href="./nuevaMoneda.html">
-                <div class="logoSeccion">
-                    <img src="../imagenes/masicoblanco.svg" alt="">
-                    <p>Nueva Moneda</p>
-                </div>
-            </a>
-        </div>
-        <div class="nav  activo">
-            <a href="./nuevaCompra.html">
-                <div class="logoSeccion">
-                    <img src="../imagenes/coinico.svg" alt="">
-                    <p  class="textoActivo">Nueva Compra</p>
-                </div>
-            </a>
-        </div>
-        <div class="nav">
-            <a href="./historial.html">
-                <div class="logoSeccion">
-                    <img src="../imagenes/historialicoblanco.svg" alt="">
-                    <p>Historial</p>
-                </div>
-            </a>
-        </div>
-        <div class="nav">
-            <a href="../index.html">
-                <div class="logoSeccion">
-                    <img src="../imagenes/saliricoblanco.svg" alt="">
-                    <p>Salir</p>
-                </div>
-            </a>
-        </div>
-    </footer>
-
-   <script src="../js/nuevaCompra.js"></script>
-</body>
-</html>
+        <div class="vacio"></div>
+        <footer class="footerDesktop">
+            <div class="nav">
+                <a href="./billeterra.html">
+                    <div class="logoSeccion">
+                        <img src="../imagenes/homeicoblanco.svg" alt="">
+                        <p>Inicio</p>
+                    </div>
+                </a>
+            </div>
+            <div class="nav">
+                <a href="./nuevaMoneda.html">
+                    <div class="logoSeccion">
+                        <img src="../imagenes/masicoblanco.svg" alt="">
+                        <p>Nueva Moneda</p>
+                    </div>
+                </a>
+            </div>
+            <div class="nav  activo">
+                <a href="./nuevaCompra.html">
+                    <div class="logoSeccion">
+                        <img src="../imagenes/coinico.svg" alt="">
+                        <p  class="textoActivo">Nueva Compra</p>
+                    </div>
+                </a>
+            </div>
+            <div class="nav">
+                <a href="./historial.html">
+                    <div class="logoSeccion">
+                        <img src="../imagenes/historialicoblanco.svg" alt="">
+                        <p>Historial</p>
+                    </div>
+                </a>
+            </div>
+            <div class="nav">
+                <a href="../index.html">
+                    <div class="logoSeccion">
+                        <img src="../imagenes/saliricoblanco.svg" alt="">
+                        <p>Salir</p>
+                    </div>
+                </a>
+            </div>
+        </footer>
+    
+        <script src="../js/nuevaCompra.js"></script>
+    
+    </body>
+    </html>
+    
