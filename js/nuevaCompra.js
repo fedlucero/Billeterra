@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
         mostrarMonedas();
     };
 
-    //este método sólo corre una vez y es ideal para crear el Schema de la BD
+    
     crearDB.onupgradeneeded = function(e) {
         //El evento es la misma base de datos 
         let db = e.target.result;
