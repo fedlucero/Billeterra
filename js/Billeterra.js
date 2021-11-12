@@ -10,8 +10,6 @@ window.addEventListener('load', () => {
                             <div class="apiHijo">Nombre</div>
                             <div class="apiHijo">Simbolo</div>
                             <div class="apiHijo">Cotizacion</div>
-                            <div class="apiHijo">Mis monedas</div>
-                            <div class="apiHijo">Mi total</div>
                         </div>`
                         fetch(`${url}tickers/?start=0&limit=25`).then(response => response.json()).then(json => {
                             const coins = json.data;
@@ -34,24 +32,11 @@ window.addEventListener('load', () => {
                                 <div class="apiHijo">
                                     ${coin.price_usd}
                                 </div>
-                                <div class="apiHijo">
-                                    mis monedas
-                                </div>
-                                <div class="apiHijo">
-                                    total
-                                </div>
-
-                                
+                                 
                             </div>
                                         `
                             });
-                            //Agrego listener a la tabla.
-                            tdiv.addEventListener("click", (e) => {
-                                //Cuando hace clic, será sobre una td, guardo el id del padre de dicho td (la fila tr de la criptomoneda)
-                                const id = e.target.parentNode.id;
-                                //Redirecciono a la página de detalle mandando por url el id
-                                window.location.href = `./detail.html?id=${id}`;
-                            });
+                           
                             tabla.append(tdiv);
                             document.getElementById('loading').classList.add('hide');
                             tabla.classList.remove('hide');
@@ -82,12 +67,7 @@ window.addEventListener('load', () => {
                                         <div class="apiHijo">
                                             ${coin.price_usd}
                                         </div>
-                                        <div class="apiHijo">
-                                        mis monedas
-                                    </div>
-                                    <div class="apiHijo">
-                                        total
-                                    </div>
+                                        
                                         
                                     </div>
                                 `

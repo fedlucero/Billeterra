@@ -95,7 +95,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             if (cursor) {
                 let monedaHTML = document.createElement('li');
-                monedaHTML.setAttribute('data-moneda-id', cursor.value.key);
+                monedaHTML.setAttribute('id', cursor.value.key);
                 monedaHTML.classList.add('list-group-item');
                  monedaHTML.innerHTML = `
                     <p class="font-weight-bold">Nombre: 
@@ -105,7 +105,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <span class="font-weight-normal">${cursor.value.simbolo}</span>
                     </p>
                     <p class="font-weight-bold">Cantidad: 
-                        <span class="font-weight-normal">${cursor.value.cantidad}</span>
+                        <span class="font-weight-normal cantidad${cursor.value.simbolo}">${cursor.value.cantidad}</span>
                     </p>
                     <p class="font-weight-bold">Cotizacion: 
                         <span class="font-weight-normal">${cursor.value.cotizacion}</span>
@@ -114,7 +114,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <span class="font-weight-normal">${cursor.value.fecha}</span>
                     </p>
                     <p class="font-weight-bold">Total: 
-                        <span class="font-weight-normal">${cursor.value.cantidad*cursor.value.cotizacion}</span>
+                        <span class="font-weight-normal total${cursor.value.simbolo}">${cursor.value.cantidad*cursor.value.cotizacion}</span>
                     </p>
                     
                 `;
