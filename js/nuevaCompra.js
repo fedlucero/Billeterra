@@ -154,7 +154,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     function borrarMoneda(e) {
-        let monedaID = Number(e.target.parentElement.getAttribute('data-moneda-id'));
+        let monedaID = Number(e.target.parentElement.getAttribute('id'));
 
         //en IndexeddDB se utilizan las transacciones
         let transaction = DB.transaction(['monedas'], 'readwrite');
